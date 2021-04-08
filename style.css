@@ -1,41 +1,90 @@
 *{
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 body{
-    background-color:;
+    font-family: 'Montserrat', sans-serif;
+}
+/*-------------------------------------------------------------Navigation-------------------------------------------------------*/
+.nav{
+    width: 100%;
+    height: 55px;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    width: 37px;
+    height: 37px;
+    margin-left: 0;
+}
+#logo_text{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 8px;
+}
+#btn{
+  height: 100%;
+  width: 10px;
+}
+img{
+  width: 30px;
+  height: 30px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 0px 8px 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #fff;
+  background-color: #818181;
 }
 
-.nav_bar{
-    width:100%;
-    height:60px;
-    box-shadow:0px 0px 8px rgba(0,0,0,0.2);
-    display:flex; 
-    flex-direction:row; 
-    justify-content:; 
-    align-items:center
-    
-}
-#head_txt{
-    font-size:20px;
-    font-weight:bold;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
 }
 
-#img{
-    width:27px;
-    height:27px;
-    margin-right:5px;
-    margin-left:10px;
+/*-------------------------------------------------------------Row 1-------------------------------------------------------*/
+/*-------------------------------------------------------------Row 2-------------------------------------------------------*/
+/*-------------------------------------------------------------Row 3-------------------------------------------------------*/
+/*-------------------------------------------------------------Row 4-------------------------------------------------------*/
+/*-------------------------------------------------------------Row 5-------------------------------------------------------*/
+
+/*-------------------------------------------------------------Footer-------------------------------------------------------*/
+.footer{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    color: #fff;
+    position: fixed;
+    background-color: #171f24;
+}
+.license{
+    font-style: normal;
 }
 
-@media only screen and (min-width: 768px){
-  /* For desktop: */
-  .nav_bar{
-      height:80px;
-  }
-}
-
-@media only screen and (min-width: 600px){
-  
+/*-------------------------------------------------------------Responsive-------------------------------------------------------*/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
