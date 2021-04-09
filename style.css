@@ -1,15 +1,27 @@
 *{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
-body{
-    font-family: 'Montserrat', sans-serif;
+@font-face {
+  font-family: archia;
+  src: url(fonts/archia-medium-webfont.woff2);
+}
+@font-face {
+  font-family: archia-bold;
+  src: url(fonts/archia-bold-webfont.woff2);
+}
+@font-face {
+  font-family: archia-semibold;
+  src: url(fonts/archia-semibold-webfont.woff2);
+}
+p{
+  font-size: 34px;
+  font-family: archia;
 }
 /*-------------------------------------------------------------Navigation-------------------------------------------------------*/
 .nav{
     width: 100%;
-    height: 55px;
+    height: 3.7rem;
     box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
     display: flex;
     flex-direction: row;
@@ -22,7 +34,9 @@ body{
     margin-left: 0;
 }
 #logo_text{
-    font-family: 'Montserrat', sans-serif;
+    font-family: archia;
+    font-weight: bold;
+    cursor: pointer;
     margin-left: 8px;
 }
 #btn{
@@ -40,7 +54,7 @@ img{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #161625;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -49,6 +63,7 @@ img{
   padding: 8px 0px 8px 8px;
   text-decoration: none;
   font-size: 16px;
+  font-family: archia;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -72,17 +87,49 @@ img{
 
 /*-------------------------------------------------------------Footer-------------------------------------------------------*/
 .footer{
-    width: 100%;
-    height: auto;
-    margin-top: 80px;
-    color: #fff;
-    position: fixed;
-    background-color: #171f24;
+  width: 100%;
+  height: auto;
+  background-color: #161625;
+}
+.social_icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
 }
 .license{
-    font-style: normal;
+  color: #6c757d;
+  font-family: "archia";
+  text-align: center;
+  font-weight: 600;
+  margin: 0 0 2rem;
+  font-size: 12px;
+  padding-top: 50px;
+  background-color: #161625;
 }
 
+.svg_facebook {
+  color: #161625;
+  fill: #26d9d9;
+}
+
+.svg_github {
+  color: #161625;
+  fill: #26d9d9;
+}
+.svg_instagram {
+  color: #161625;
+  fill: #26d9d9;
+}
+.svg_twitter {
+  color: #161625;
+  fill: #26d9d9;
+}
+.svg_youtube {
+  color: #161625;
+  fill: #26d9d9;
+}
 /*-------------------------------------------------------------Responsive-------------------------------------------------------*/
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
