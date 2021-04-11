@@ -1,7 +1,9 @@
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
+/*---------------------------------------------------------------Fonts----------------------------------------------------------*/
 @font-face {
   font-family: archia;
   src: url(fonts/archia-medium-webfont.woff2);
@@ -14,59 +16,57 @@
   font-family: archia-semibold;
   src: url(fonts/archia-semibold-webfont.woff2);
 }
-p{
-  font-size: 34px;
-  font-family: archia;
-}
+
 /*-------------------------------------------------------------Navigation-------------------------------------------------------*/
-.nav{
-    width: 100%;
-    height: 3.7rem;
-    box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.nav {
+  width: 100%;
+  height: 3.7rem;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  background-color: #1e1e30!important;
+  box-shadow: 0px 0px 12px #161625;
 }
-#logo{
-    width: 37px;
-    height: 37px;
-    margin-left: 0;
+a {
+  text-decoration: none;
+  cursor: auto;
 }
-#logo_text{
-    font-family: archia;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 8px;
-}
-#btn{
-  height: 100%;
-  width: 10px;
-}
-img{
-  width: 30px;
-  height: 30px;
+.nav_logo {
+  top: 50%;
+  left: 50%;
+  margin-left: 0;
+  float: none;
+  font-size: 33px;
+  font-weight: bold;
+  font-family: archia;
+  color: #bdbdbd;
+  cursor: pointer;
+  position: absolute;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
 }
 .sidenav {
-  height: 100%;
   width: 0;
-  position: fixed;
-  z-index: 1;
+  height: 100%;
   top: 0;
   left: 0;
-  background-color: #161625;
-  overflow-x: hidden;
+  z-index: 1;
   transition: 0.5s;
   padding-top: 60px;
+  float: left;
+  position: fixed;
+  overflow-x: hidden;
+  background-color: #161625;
 }
 .sidenav a {
-  padding: 8px 0px 8px 8px;
-  text-decoration: none;
   font-size: 16px;
-  font-family: archia;
-  color: #818181;
-  display: block;
   transition: 0.3s;
+  padding: 8px 0px 8px 8px;
+  display: block;
+  color: #818181;
+  text-decoration: none;
+  font-family: archia;
 }
 .sidenav a:hover {
   color: #fff;
@@ -74,64 +74,100 @@ img{
 }
 
 .sidenav .closebtn {
-  position: absolute;
   top: 0;
   font-size: 36px;
+  position: absolute;
 }
 
 /*-------------------------------------------------------------Row 1-------------------------------------------------------*/
+.row1 {
+  width: 100%;
+  height: 640px;
+  color: #000;
+  font-family: archia;
+  justify-content: center;
+  background-color: #fff;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hero {
+  padding: 80px 50px;
+}
+.header {
+  font-size: 42px;
+  padding: 8px;
+}
+.descrp {
+  padding: 8px;
+  font-size: 16px;
+}
+.doubleborder {
+  width: 120px;
+  height: 50px;
+  border-radius: 45px;
+  background-color: #fff;
+  color: #000; 
+  border: 2px solid #161625;
+  margin: 10px;
+}
+.doubleborder:hover{
+  background-color: #161625;
+  color: #fff; 
+}
+
 /*-------------------------------------------------------------Row 2-------------------------------------------------------*/
 /*-------------------------------------------------------------Row 3-------------------------------------------------------*/
 /*-------------------------------------------------------------Row 4-------------------------------------------------------*/
 /*-------------------------------------------------------------Row 5-------------------------------------------------------*/
 
 /*-------------------------------------------------------------Footer-------------------------------------------------------*/
-.footer{
+.footer {
   width: 100%;
   height: auto;
   background-color: #161625;
 }
-.social_icons{
+.social_icons {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
+  flex-direction: row;
   padding-bottom: 50px;
+  justify-content: center;
 }
-.license{
-  color: #6c757d;
-  font-family: "archia";
-  text-align: center;
+.license {
+  font-size: 12px;
   font-weight: 600;
   margin: 0 0 2rem;
-  font-size: 12px;
   padding-top: 50px;
+  color: #6c757d;
+  text-align: center;
+  font-family: "archia";
   background-color: #161625;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.svg_facebook {
-  color: #161625;
+.svg {
   fill: #26d9d9;
+  color: #161625;
 }
 
-.svg_github {
-  color: #161625;
-  fill: #26d9d9;
-}
-.svg_instagram {
-  color: #161625;
-  fill: #26d9d9;
-}
-.svg_twitter {
-  color: #161625;
-  fill: #26d9d9;
-}
-.svg_youtube {
-  color: #161625;
-  fill: #26d9d9;
-}
-/*-------------------------------------------------------------Responsive-------------------------------------------------------*/
+/*--------------------------------------------------------Responsive-------------------------------------------------------*/
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (min-width: 768px) {
+  .hero{padding: 150px 70px;}
+}
+
+/*--------------------------------------------------------Tablet-------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  
 }
