@@ -83,7 +83,7 @@ a {
   height: 520px;
   width: 260px;
   display: inline-block;
-  background: url(i.jpg);
+  background: url(icons/i.jpg);
   background-size: cover;
   border: 9px solid #080808;
   border-radius: 44px;
