@@ -1,389 +1,69 @@
 *{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
-
+h1,h2,h3,p {
+    font-family: archia;
+}
+.head {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+p {
+    margin-left: 30px;
+}
+  
 /*---------------------------------------------------------------Fonts----------------------------------------------------------*/
 @font-face {
-  font-family: archia;
-  src: url(fonts/archia-medium-webfont.woff2);
+    font-family: archia;
+    src: url(fonts/archia-medium-webfont.woff2);
 }
 @font-face {
-  font-family: archia-bold;
-  src: url(fonts/archia-bold-webfont.woff2);
+    font-family: archia-bold;
+    src: url(fonts/archia-bold-webfont.woff2);
 }
 @font-face {
-  font-family: archia-semibold;
-  src: url(fonts/archia-semibold-webfont.woff2);
+    font-family: archia-semibold;
+    src: url(fonts/archia-semibold-webfont.woff2);
 }
-
-/*-------------------------------------------------------------Navigation-------------------------------------------------------*/
 .nav {
-  width: 100%;
-  height: 3.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 0px 12px #161625;
-  background-color: #1e1e30!important;
+    width: 100%;
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 12px #161625;
+    background-color: #1e1e30!important;
 }
 a {
-  text-decoration: none;
-  cursor: auto;
+    text-decoration: none;
+    cursor: auto;
 }
 .nav_logo {
-  font-size: 33px;
-  font-weight: bold;
-  font-family: archia;
-  color: #bdbdbd;
-  cursor: pointer;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: archia;
+    color: #bdbdbd;
+    padding-left: 20px;
+    cursor: pointer;
 }
-.sign-btn {
+.post {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px;
+    background-color: yellowgreen;
+    color: #fff;
+    padding: 10px;
+    margin: 30px;
+}
+button {
   cursor: pointer;
   color: #6c757d;
-  padding-right: 15px;
+  padding: 8px;
   font-size: 12px;
   font-weight: 600;
   font-family: archia;
-}
-.sidenav {
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: 0.5s;
-  padding-top: 60px;
-  float: left;
-  position: fixed;
-  overflow-x: hidden;
-  background-color: #161625;
-}
-.sidenav a {
-  font-size: 16px;
-  transition: 0.3s;
-  padding: 8px 0px 8px 8px;
-  display: block;
-  color: #818181;
-  text-decoration: none;
-  font-family: archia;
-}
-.sidenav a:hover {
-  color: #fff;
-  background-color: #818181;
-}
-
-.sidenav .closebtn {
-  top: 0;
-  font-size: 36px;
-  position: absolute;
-}
-/*-------------------------------------------------------Iphone design-----------------------------------------------------*/
-.iphone-x {
-  height: 520px;
-  width: 260px;
-  display: inline-block;
-  background: url(icons/iphone.jpg);
-  background-size: cover;
-  border: 9px solid #080808;
-  border-radius: 44px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  position: relative;
-}
-.iphone-x:before {
-  position: absolute;
-  left: calc(50% - 28%);
-  top: 0;
-  width: 58%;
-  background: #080808;
-  height: 20px;
-  content: "";
-  border-radius: 0 0 15px 15px;
-}
-
-
-/*-------------------------------------------------------------Row 1-------------------------------------------------------*/
-.row1 {
-  width: 100%;
-  height: auto;
-  color: #000;
-  display: flex;
-  font-family: archia;
-  background-color: #fff;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.hero {
-  padding: 80px 40px;
-}
-.header {
-  font-size: 42px;
-  padding: 8px;
-}
-.descrp {
-  padding: 8px;
-  font-size: 16px;
-}
-.doubleborder {
-  width: 120px;
-  height: 40px;
-  border-radius: 45px;
-  background-color: #fff;
-  color: #000; 
-  border: 2px solid #161625;
-  margin: 10px;
-}
-.doubleborder:hover {
-  background-color: #161625;
-  color: #fff; 
-}
-#myVideo {
-  width: 400px;
-  height: auto;
-  justify-content: center;
-}
-
-/*-------------------------------------------------------------Row 2-------------------------------------------------------*/
-.row2 {
-  width: 100%;
-  height: 640px;
-  font-family: archia;
-  color: #fff;
-  background-color: #161625;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.pro {
-  padding: 80px 40px;
-}
-/*-------------------------------------------------------------Row 3-------------------------------------------------------*/
-.row3 {
-  width: 100%;
-  height: 640px;
-  font-family: archia;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-/*-------------------------------------------------------------Row 4-------------------------------------------------------*/
-.row4 {
-  width: 100%;
-  height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #161625;
-}
-.wrapper {
-  flex-wrap: nowrap;
-  margin: 40px auto;
-  width: 90%;
-  font-family: archia;
-}
-li {
-  display: none;
-}
-.wrapper-card {
-  flex-wrap: nowrap;
-  margin: 40px auto;
-  width: 70%;
-}
-.card {
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px transparent;
-  flex: 1;
-  margin: 20px;
-  padding: 30px;
-  position: relative;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
-}
-.card.popular .card-title h3 {
-  color: #28a645;
-  font-size: 22px;
-}
-.card.popular .card-price {
-  margin: 20px;
-}
-.card.popular .card-price h1 {
-  color: #28a645;
-  font-size: 60px;
-}
-.card:hover {
-  box-shadow: 0 8px 20px #aaaaaa;
-}
-.card-ribbon {
-  position: absolute;
-  overflow: hidden;
-  top: -10px;
-  left: -10px;
-  width: 114px;
-  height: 112px;
-}
-.card-ribbon span {
-  position: absolute;
-  display: block;
-  width: 160px;
-  padding: 10px 0;
-  background-color: #28a645;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  text-align: center;
-  left: -35px;
-  top: 25px;
-  transform: rotate(-45deg);
-}
-.card-ribbon::before,
-.card-ribbon::after {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  display: block;
-  border: 5px solid #28a645;
-  border-top-color: transparent;
-  border-left-color: transparent;
-}
-.card-ribbon::before {
-  top: 0;
-  right: 0;
-}
-.card-ribbon::after {
-  bottom: 0;
-  left: 0;
-}
-.card-title h3 {
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 15px;
-}
-.card-title h4 {
-  color: rgba(0, 0, 0, 0.6);
-}
-.card-price {
-  margin: 20px 0;
-}
-.card-price h1 {
-  font-size: 46px;
-}
-.card-price h1 sup {
-  font-size: 15px;
-  display: inline-block;
-  margin-left: -20px;
-  width: 10px;
-}
- .card-price h1 small {
-  color: rgba(0, 0, 0, 0.3);
-  display: block;
-  font-size: 11px;
-}
-.card-description ul {
-  display: block;
-  list-style: none;
-  margin: 20px 0;
-  padding: 0;
-}
-.card-description li {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 15px;
-  margin: 0 0 15px;
-}
-.card-description li::before {
-  font-family: FontAwesome;
-  content: "\f00c";
-  padding: 0 5px 0 0;
-  color: rgba(0, 0, 0, 0.15);
-}
-.card-action button {
-  background: transparent;
-  border: 2px solid #28a645;
-  border-radius: 30px;
-  color: #28a645;
-  cursor: pointer;
-  display: block;
-  font-size: 15px;
-  font-weight: bold;
-  width: 100%;
-  height: 60px;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-}
-.card-action button:hover {
-  background-color: #28a645;
-  box-shadow: 0 2px 4px #28c645;
-  color: #fff;
-}
-
-/*-------------------------------------------------------------Row 5-------------------------------------------------------*/
-
-/*-------------------------------------------------------------Footer-------------------------------------------------------*/
-.footer {
-  width: 100%;
-  height: auto;
-  background-color: #161625;
-}
-.social_icons {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding-bottom: 50px;
-  justify-content: center;
-}
-.license {
-  font-size: 12px;
-  font-weight: 600;
-  margin: 0 0 2rem;
-  padding-top: 50px;
-  color: #6c757d;
-  text-align: center;
-  font-family: "archia";
-  background-color: #161625;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.svg {
-  fill: #26d9d9;
-  color: #161625;
-  cursor: pointer;
-}
-
-/*--------------------------------------------------------Responsive-------------------------------------------------------*/
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-@media only screen and (min-width: 768px) {
-  .hero{padding: 150px 70px;}
-  .pro {padding: 40px 40px;}
-  li {display: block;}
-  .card-price {margin: 60px 0;}
-  .card.popular .card-price {margin: 50px;}
-  .wrapper {display: flex; flex-wrap: nowrap; margin: 40px auto; width: 90%; font-family: archia;}
-  .wrapper-card {display: flex; flex-wrap: nowrap; margin: 40px auto; width: 77%;}
-}
-
-/*--------------------------------------------------------Tablet-------------------------------------------------------*/
-@media only screen and (min-width: 600px) {
-  
 }
