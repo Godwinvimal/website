@@ -88,7 +88,6 @@ a {
   width: 100%;
   height: auto;
   color: #000;
-  display: flex;
   font-family: archia;
   background-color: #fff;
   -webkit-user-select: none;
@@ -133,6 +132,12 @@ a {
 .doubleborders:hover{
   background-color: #12cae6;
   color: #fff;
+}
+.main_img {
+  display: none;
+}
+img {
+  border-radius: 8px;
 }
 
 /*-------------------------------------------------------------Row 2-------------------------------------------------------*/
@@ -188,6 +193,19 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
+.social_icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 40px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.svg {
+  fill: #26d9d9;
+  color: #161625;
+  cursor: pointer;
+}
 
 /*--------------------------------------------------------Responsive-------------------------------------------------------*/
 @media screen and (max-height: 450px) {
@@ -198,6 +216,8 @@ a {
 @media only screen and (min-width: 768px) {
   .hero{padding: 150px 70px;}
   .pro {padding: 40px 40px;}
+  .row1 {display: flex;}
+  .main_img {margin: 100px; display: block;}
 }
 
 /*--------------------------------------------------------Tablet-------------------------------------------------------*/
